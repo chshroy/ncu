@@ -7,14 +7,17 @@ def f(x):
 def g(x):
     return pylab.minimum(abs(x * pylab.sin(x)), abs(x * pylab.cos(x)))
 
-a, b, n = -2 * pylab.pi, 2 * pylab.pi, 10000
+pi = pylab.pi
+a, b, n = -2 * pi, 2 * pi, 10000
 xs = pylab.linspace(a, b, n)
 
-pylab.plot(xs, f(xs))
-pylab.plot(xs, g(xs))
-pylab.title("f(x)=max[abs(x sin(x)), abs(x cos(x)) ], g(x)=min( abs(x sin(x)), abs(x cos(x)) )")
+pylab.plot(xs, f(xs))  # draw f(x)
+pylab.plot(xs, g(xs))  # draw g(x)
+title = "f(x)=max( abs(x sin(x)), abs(x cos(x)) ), g(x)=min( abs(x sin(x)), abs(x cos(x)) )"
+pylab.title(title, fontsize = 8) # add title
 
+pylab.xlim((-8, 8))    # x-axis
+pylab.ylim((0, 7))     # y-axis
 pylab.grid()
-
 
 pylab.show()
