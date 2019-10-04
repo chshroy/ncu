@@ -13,7 +13,7 @@ using namespace std;
 signed main() {
 	int n; cin >> n;
 	if(n <= 3) {
-		cout << "It’s not a Christmas tree!!!\n";
+		cout << "It's not a Christmas tree!!!\n";
 		return 0;
 	}
 	
