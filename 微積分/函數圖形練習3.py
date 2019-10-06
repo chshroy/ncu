@@ -15,7 +15,8 @@ pylab.plot(xs, f(xs))  # draw f(x)
 title = "f(x) = sin(x)/|2x|"
 pylab.title(title, fontsize = 8) # add title
 
-
+pylab.xlabel("x")
+pylab.ylabel("y")
 pylab.grid()
 
 pylab.show()
