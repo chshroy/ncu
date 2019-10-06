@@ -18,6 +18,8 @@ pylab.title(title, fontsize = 8) # add title
 
 pylab.xlim((0, 35))    # x-axis
 pylab.ylim((0.0, 1.0))     # y-axis
+pylab.xlabel("x")
+pylab.ylabel("y")
 pylab.grid()
 
 pylab.show()
