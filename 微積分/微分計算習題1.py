@@ -17,7 +17,7 @@ xs = pylab.linspace(a, b, n)
 
 pylab.plot(xs, f(xs))  # draw f(x)
 pylab.plot(xs, df(xs, h), color = 'green')
-title = "f(x) = (2+sin(x/pi))/(2-sin(x/pi)) and computed derivative"
+title = "f(x) = (2 + sin(x/pi))/(2 - sin(x/pi)) and computed derivative"
 pylab.title(title, fontsize = 8) # add title
 
 pylab.xlim((a, b))    # x-axis
